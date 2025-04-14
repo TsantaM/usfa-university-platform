@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USFA - Connexion</title>
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/connexion.css">
+</head>
+<body>
+    <header>
+        <ul class="mini-menu">
+            <li><button class="button ghost" id="toggleMenu"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg></button></li>
+            <li><a href="Connexion.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-user-icon lucide-user">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg></a></li>
+            <li><button id="themeToggler" class="button ghost">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg> -->
+                </button></li>
+            <li><button class="button ghost"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg></button></li>
+        </ul>
+
+        <nav class="nav-menu" id="nav_menu">
+            <ul>
+                <li><a href="Index.html">Acceuil</a></li>
+                <li><a href="">Départements</a></li>
+                <li><a href="Connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="sectionform">
+        <div class="form_container">
+            <div class="text">
+                <h1>Welcome Back</h1>
+                <p>Connectez vous à votre compte pour voir vos notes, absences et emploi du temps</p>
+            </div>
+            <div class="form">
+                <form action="">
+                    <input type="text" name="matricule" class="input_form" placeholder="Votre numéro matricule">
+                    <input type="password" name="password" class="input_form" placeholder="Votre mot de passe">
+                    <button class="button primary">Connexion</button>
+                </form>
+                <a href="Inscription.html" class="sign_link button ghost">Je souhaite rejoindre l'USFA</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="JS/toggleTheme.js"></script>
+    <script src="JS/menu.js"></script>
+</body>
+</html>
