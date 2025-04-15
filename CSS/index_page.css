@@ -33,6 +33,7 @@
 }
 
 #section2 {
+    background: hsl(var(--accent));
     padding: 5vw;
     display: flex;
     flex-direction: column;

@@ -150,7 +150,7 @@ a {
     cursor: text;
     padding: 0.75em 1em;
     border-radius: var(--radius);
-    background: hsl(var(--background));
+    background: hsl(var(--input));
     color:  hsl(var(--accent-foreground));
     border: solid 3px hsl(var(--accent-foreground));
     outline: none;
@@ -252,6 +252,7 @@ header {
 }
 
 footer {
+    background: hsl(var(--accent));
     padding: 5vw;
     display: flex;
     flex-direction: column;
@@ -312,7 +313,7 @@ footer {
             gap: 3vw;
             li {
                 a {
-                    color: hsl(var(--primary));
+                    color: hsl(var(--destructive));
                     text-decoration: none;
                 }
             }
@@ -320,7 +321,7 @@ footer {
 
         p {
             a {
-                color: hsl(var(--primary));
+                color: hsl(var(--destructive));
                 text-decoration: none;
             }
         }

@@ -27,12 +27,12 @@ header {
     }
 }
 
-#section2 {
+#section3 {
     display: flex;
     flex-direction: column;
 }
 
-#section2, #section3 {
+#section2, #section3, #section4 {
     padding: 5vw;
 }
 
@@ -42,7 +42,7 @@ header {
         align-items: center;
         justify-content: space-between;
         padding: 1vw;
-        border-bottom: 2px hsl(var(--foreground)) solid;
+        border-bottom: 1px hsl(var(--accent)) solid;
         border-radius: 1vw 1vw 0 0;
         cursor: pointer;
         h3, svg {
@@ -71,7 +71,7 @@ header {
         /* padding: 1vw; */
         height: 0;
         overflow: hidden;
-        overflow-y: auto;
+        visibility: hidden;
         transition: 0.5s ease;
         padding: 1vw;
         table {
@@ -79,7 +79,7 @@ header {
             width: 100%;
             th, td {
                 padding: 1.5vw;
-                border-bottom: 1px hsl(var(--foreground)) solid;
+                border-bottom: 1px hsl(var(--accent)) solid;
             }
 
             th {
@@ -95,7 +95,22 @@ header {
         }
     }
 
+    .edt {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        gap: 2vw;
+        tr {
+            td {
+                text-align: center;
+                border-right: 1px solid hsl(var(--accent));
+            }
+        }
+    }
+
     .active {
+        visibility: visible;
+        overflow-y: auto;
         padding: 1vw;
         height: 75vh;
     }
