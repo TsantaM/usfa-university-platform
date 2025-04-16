@@ -1,305 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>USFA - User Name</title>
-    <link rel="stylesheet" href="CSS/global.css">
-    <link rel="stylesheet" href="CSS/dashboard.css">
-</head>
+    <link rel="stylesheet" href="CSS/global.css" />
+    <link rel="stylesheet" href="CSS/dashboard.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <ul class="mini-menu">
-            <li><button class="button ghost" id="toggleMenu"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
-                        <line x1="4" x2="20" y1="12" y2="12" />
-                        <line x1="4" x2="20" y1="6" y2="6" />
-                        <line x1="4" x2="20" y1="18" y2="18" />
-                    </svg></button></li>
-            <li><a href="Connexion.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-user-icon lucide-user">
-                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                        <circle cx="12" cy="7" r="4" />
-                    </svg></a></li>
-            <li><button id="themeToggler" class="button ghost">
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg> -->
-                </button></li>
-            <li><button class="button ghost"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone">
-                        <path
-                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                    </svg></button></li>
-        </ul>
+      <ul class="mini-menu">
+        <li>
+          <button class="button ghost" id="toggleMenu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-icon lucide-menu"
+            >
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a href="Connexion.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-user-icon lucide-user"
+            >
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" /></svg
+          ></a>
+        </li>
+        <li>
+          <button id="themeToggler" class="button ghost">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg> -->
+          </button>
+        </li>
+        <li>
+          <button class="button ghost">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-phone-icon lucide-phone"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
 
-        <nav class="nav-menu" id="nav_menu">
-            <ul>
-                <li><a href="Index.html">Acceuil</a></li>
-                <li><a href="">Départements</a></li>
-                <li><a href="Connexion.html">Connexion</a></li>
-            </ul>
-        </nav>
+      <nav class="nav-menu" id="nav_menu">
+        <ul>
+          <li><a href="Index.html">Acceuil</a></li>
+          <li><a href="">Départements</a></li>
+          <li><a href="Connexion.html">Connexion</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="section1">
-        <div class="user-info">
-            <h1>Espace Etudiant</h1>
-            <ul>
-                <li>Nom : ANDRIAMAMPIANINA</li>
-                <li>Prénom : Tsanta Mirindra Famenontsoa</li>
-                <li>Niveau : M1</li>
-                <li>Filière : Droit & Science Politique</li>
-                <li>Numéro matricule : DSP 00000 5086</li>
-                <li>Numéro d'ordre : 3</li>
-            </ul>
-        </div>
+      <div class="user-info">
+        <h1>Espace Etudiant</h1>
+        <ul>
+          <li>Nom : ANDRIAMAMPIANINA</li>
+          <li>Prénom : Tsanta Mirindra Famenontsoa</li>
+          <li>Niveau : M1</li>
+          <li>Filière : Droit & Science Politique</li>
+          <li>Numéro matricule : DSP 00000 5086</li>
+          <li>Numéro d'ordre : 3</li>
+        </ul>
+      </div>
     </section>
 
     <section id="section2" class="accordeon">
-        <div class="label accordeon_label" data-accordeon="1">
-            <div class="title-and-reload">
-                <button class="button secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-refresh-ccw-icon lucide-refresh-ccw">
-                        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-                        <path d="M3 3v5h5" />
-                        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
-                        <path d="M16 16h5v5" />
-                    </svg></button>
-                <h3>Mon emploi du temps</h3>
-            </div>
-            <svg class="accordeon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-chevron-down-icon lucide-chevron-down">
-                <path d="m6 9 6 6 6-6" />
+      <div class="label accordeon_label" data-accordeon="1">
+        <div class="title-and-reload">
+          <button class="button secondary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-refresh-ccw-icon lucide-refresh-ccw"
+            >
+              <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+              <path d="M3 3v5h5" />
+              <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
+              <path d="M16 16h5v5" />
             </svg>
+          </button>
+          <h3>Mon emploi du temps</h3>
         </div>
+        <svg
+          class="accordeon-arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-chevron-down-icon lucide-chevron-down"
+        >
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </div>
 
-        <div class="accordeon_content edt" data-accordeon="1">
-            <div class="selecter">
-                <label for="weekSelect">Choisir une semaine : </label>
-                <input type="week" id="weekSelect" class="input_form" />
-            </div>
-            <table id="edt">
-                <thead>
-                    <tr>
-                        <th>Période</th>
-                        <th id="jour1" class="jour">Lun 01</th>
-                        <th id="jour2" class="jour">Mar 02</th>
-                        <th id="jour3" class="jour">Mer 03</th>
-                        <th id="jour4" class="jour">Jeu 04</th>
-                        <th id="jour5" class="jour">Ven 05</th>
-                        <th id="jour6" class="jour">Sam 06</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Matin</th>
-                        <td id="lun-matin" class="jour-horaire"></td>
-                        <td id="mar-matin" class="jour-horaire"></td>
-                        <td id="mer-matin" class="jour-horaire"></td>
-                        <td id="jeu-matin" class="jour-horaire"></td>
-                        <td id="ven-matin" class="jour-horaire"></td>
-                        <td id="sam-matin" class="jour-horaire"></td>
-                    </tr>
-                    <tr>
-                        <th>Après-midi</th>
-                        <td id="lun-apm" class="jour-horaire"></td>
-                        <td id="mar-apm" class="jour-horaire"></td>
-                        <td id="mer-apm" class="jour-horaire"></td>
-                        <td id="jeu-apm" class="jour-horaire"></td>
-                        <td id="ven-apm" class="jour-horaire"></td>
-                        <td id="sam-apm" class="jour-horaire"></td>
-                    </tr>
-                </tbody>
-            </table>
+      <div class="accordeon_content edt" data-accordeon="1">
+        <div class="selecter">
+          <label for="weekSelect">Choisir une semaine : </label>
+          <input type="week" id="weekSelect" class="input_form" />
         </div>
+        <table id="edt">
+          <thead>
+            <tr>
+              <th>Période</th>
+              <th id="jour1" class="jour">Lun 01</th>
+              <th id="jour2" class="jour">Mar 02</th>
+              <th id="jour3" class="jour">Mer 03</th>
+              <th id="jour4" class="jour">Jeu 04</th>
+              <th id="jour5" class="jour">Ven 05</th>
+              <th id="jour6" class="jour">Sam 06</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Matin</th>
+              <td id="lun-matin" class="jour-horaire"></td>
+              <td id="mar-matin" class="jour-horaire"></td>
+              <td id="mer-matin" class="jour-horaire"></td>
+              <td id="jeu-matin" class="jour-horaire"></td>
+              <td id="ven-matin" class="jour-horaire"></td>
+              <td id="sam-matin" class="jour-horaire"></td>
+            </tr>
+            <tr>
+              <th>Après-midi</th>
+              <td id="lun-apm" class="jour-horaire"></td>
+              <td id="mar-apm" class="jour-horaire"></td>
+              <td id="mer-apm" class="jour-horaire"></td>
+              <td id="jeu-apm" class="jour-horaire"></td>
+              <td id="ven-apm" class="jour-horaire"></td>
+              <td id="sam-apm" class="jour-horaire"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section id="section3" class="accordeon">
-        <div class="label accordeon_label" data-accordeon="2">
-            <div class="title-and-reload">
-                <button class="button secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-refresh-ccw-icon lucide-refresh-ccw">
-                        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-                        <path d="M3 3v5h5" />
-                        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
-                        <path d="M16 16h5v5" />
-                    </svg></button>
-                <h3>Mes notes</h3>
-            </div>
-            <svg class="accordeon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-chevron-down-icon lucide-chevron-down">
-                <path d="m6 9 6 6 6-6" />
+      <div class="label accordeon_label" data-accordeon="2">
+        <div class="title-and-reload">
+          <button class="button secondary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-refresh-ccw-icon lucide-refresh-ccw"
+            >
+              <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+              <path d="M3 3v5h5" />
+              <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
+              <path d="M16 16h5v5" />
             </svg>
+          </button>
+          <h3>Mes notes</h3>
         </div>
+        <svg
+          class="accordeon-arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-chevron-down-icon lucide-chevron-down"
+        >
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </div>
 
-        <div class="accordeon_content" data-accordeon="2">
-            <table cellpadding="10" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Matière</th>
-                        <th class="no-matiere credit">Crédits</th>
-                        <th class="no-matiere">Note</th>
-                        <th class="no-matiere credit">Crédits Obtenus</th>
-                        <th class="no-matiere">Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th colspan="5">UC FONDAMENTALES</th>
-                    </tr>
-                    <tr>
-                        <td>Droit de l'environnement</td>
-                        <td class="no-matiere credit">5</td>
-                        <td class="no-matiere">14</td>
-                        <td class="no-matiere credit">5</td>
-                        <td class="no-matiere">Validé</td>
-                    </tr>
-                    <tr>
-                        <th colspan="5">UC COMPLEMENTAIRES</th>
-                    </tr>
-                    <tr>
-                        <td>Droit Commercial</td>
-                        <td class="no-matiere credit">3</td>
-                        <td class="no-matiere">12</td>
-                        <td class="no-matiere credit">3</td>
-                        <td class="no-matiere">Validé</td>
-                    </tr>
-                    <tr>
-                        <th colspan="5">UC TRANSVERSALES</th>
-                    </tr>
-                    <tr>
-                        <td>Gestion de Projet</td>
-                        <td class="no-matiere credit">2</td>
-                        <td class="no-matiere">12</td>
-                        <td class="no-matiere credit">2</td>
-                        <td class="no-matiere">Validé</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+      <div class="accordeon_content" data-accordeon="2">
+        <table cellpadding="10" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Matière</th>
+              <th class="no-matiere credit">Crédits</th>
+              <th class="no-matiere">Note</th>
+              <th class="no-matiere credit">Crédits Obtenus</th>
+              <th class="no-matiere">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th colspan="5">UC FONDAMENTALES</th>
+            </tr>
+            <tr>
+              <td>Droit de l'environnement</td>
+              <td class="no-matiere credit">5</td>
+              <td class="no-matiere">14</td>
+              <td class="no-matiere credit">5</td>
+              <td class="no-matiere">Validé</td>
+            </tr>
+            <tr>
+              <th colspan="5">UC COMPLEMENTAIRES</th>
+            </tr>
+            <tr>
+              <td>Droit Commercial</td>
+              <td class="no-matiere credit">3</td>
+              <td class="no-matiere">12</td>
+              <td class="no-matiere credit">3</td>
+              <td class="no-matiere">Validé</td>
+            </tr>
+            <tr>
+              <th colspan="5">UC TRANSVERSALES</th>
+            </tr>
+            <tr>
+              <td>Gestion de Projet</td>
+              <td class="no-matiere credit">2</td>
+              <td class="no-matiere">12</td>
+              <td class="no-matiere credit">2</td>
+              <td class="no-matiere">Validé</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section id="section4" class="accordeon">
-        <div class="label accordeon_label" data-accordeon="3">
-            <div class="title-and-reload">
-                <button class="button secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-refresh-ccw-icon lucide-refresh-ccw">
-                        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-                        <path d="M3 3v5h5" />
-                        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
-                        <path d="M16 16h5v5" />
-                    </svg></button>
-                <h3>Mes absences</h3>
-            </div>
-            <svg class="accordeon-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-chevron-down-icon lucide-chevron-down">
-                <path d="m6 9 6 6 6-6" />
+      <div class="label accordeon_label" data-accordeon="3">
+        <div class="title-and-reload">
+          <button class="button secondary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-refresh-ccw-icon lucide-refresh-ccw"
+            >
+              <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+              <path d="M3 3v5h5" />
+              <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
+              <path d="M16 16h5v5" />
             </svg>
+          </button>
+          <h3>Mes absences</h3>
         </div>
+        <svg
+          class="accordeon-arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-chevron-down-icon lucide-chevron-down"
+        >
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </div>
 
-        <div class="accordeon_content" data-accordeon="3">
-            <table cellpadding="10" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th class="date-absence">Matière</th>
-                        <th class="date-absence">Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="date-absence">Droit Bancaire</td>
-                        <td class="date-absence">12 Janv 2025</td>
-                    </tr>
-                    <tr>
-                        <td class="date-absence">Droit de l'Environnement</td>
-                        <td class="date-absence">12 Janv 2025</td>
-                    </tr>
-                    <tr>
-                        <td class="date-absence">Droit International Public</td>
-                        <td class="date-absence">12 Janv 2025</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
+      <div class="accordeon_content" data-accordeon="3">
+        <table cellpadding="10" cellspacing="0">
+          <thead>
+            <tr>
+              <th class="date-absence">Matière</th>
+              <th class="date-absence">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="date-absence">Droit Bancaire</td>
+              <td class="date-absence">12 Janv 2025</td>
+            </tr>
+            <tr>
+              <td class="date-absence">Droit de l'Environnement</td>
+              <td class="date-absence">12 Janv 2025</td>
+            </tr>
+            <tr>
+              <td class="date-absence">Droit International Public</td>
+              <td class="date-absence">12 Janv 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <footer>
-        <hr>
-        <div class="foot-p-1">
-            <div class="title-and-res">
-                <h2><span>Université</span> Saint François d'Assise</h2>
-                <div class="reseaux">
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                        </svg></a>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram">
-                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                        </svg></a>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter">
-                            <path
-                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-                        </svg></a>
-                </div>
-            </div>
-
-            <ul>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-phone-icon lucide-phone">
-                        <path
-                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                    </svg> +261 034 00 000 00</li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-mail-icon lucide-mail">
-                        <rect width="20" height="16" x="2" y="4" rx="2" />
-                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg> USFA@USFA-mail.com</li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-map-pin-icon lucide-map-pin">
-                        <path
-                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
-                        <circle cx="12" cy="10" r="3" />
-                    </svg> LOT 51G Somewhere in Mada</li>
-            </ul>
-
+      <hr />
+      <div class="foot-p-1">
+        <div class="title-and-res">
+          <h2><span>Université</span> Saint François d'Assise</h2>
+          <div class="reseaux">
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-facebook-icon lucide-facebook"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                /></svg
+            ></a>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-instagram-icon lucide-instagram"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg
+            ></a>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-twitter-icon lucide-twitter"
+              >
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                /></svg
+            ></a>
+          </div>
         </div>
-        <div class="foot-p-2">
-            <ul>
-                <li><a href="">A Propos</a></li>
-                <li><a href="">Mentions Légale</a></li>
-                <li><a href="">FAQ</a></li>
-            </ul>
 
-            <p>Dev : <a href="">Tsanta</a></p>
-        </div>
+        <ul>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-phone-icon lucide-phone"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+            +261 034 00 000 00
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-mail-icon lucide-mail"
+            >
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            USFA@USFA-mail.com
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-map-pin-icon lucide-map-pin"
+            >
+              <path
+                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+              />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            LOT 51G Somewhere in Mada
+          </li>
+        </ul>
+      </div>
+      <div class="foot-p-2">
+        <ul>
+          <li><a href="">A Propos</a></li>
+          <li><a href="">Mentions Légale</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+
+        <p>Dev : <a href="">Tsanta</a></p>
+      </div>
     </footer>
 
     <script src="JS/toggleTheme.js"></script>
     <script src="JS/accordeon.js"></script>
     <script src="JS/menu.js"></script>
     <script src="JS/dashbord.js"></script>
-</body>
-
+  </body>
 </html>

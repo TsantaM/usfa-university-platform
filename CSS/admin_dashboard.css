@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  padding: 1vw;
+  height: 200vh;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 95%;
+  position: fixed;
+  top: 1vw;
+  left: 1vw;
+  background: hsl(var(--secondary));
+  border-radius: 1vw;
+  overflow: hidden;
+  .header-admin {
+    background: hsl(var(--primary));
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    svg {
+      /* font-size: 5vw; */
+      width: 3vw;
+      height: 3vw;
+    }
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  nav {
+    width: 100%;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      li {
+        padding: 2vw 1vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5vw;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        svg {
+          width: 2vw;
+          height: 2vw;
+        }
+      }
+    }
+  }
+}
